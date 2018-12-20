@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+    <div class="success">
+        <asp:Label ID="LBSuccess" runat="server" Text="Label" ForeColor="Green" Visible ="false"></asp:Label>
+    </div>
+    
+    <div class="error">
+        <asp:Label ID="LBError" runat="server" Text="Label" ForeColor="Red" Visible ="false"></asp:Label>
+    </div>
+    
+    <div runat="server" id="Container" visible="false">
+
+        <div class="profile-header">
+
+            <asp:Image ID="Cover" runat="server" Width="100%" Height="300px" Scale="both"/>
+
+            <div id="profile-picture">
+                <asp:Image ID="ProfilePhoto" runat="server" Width="200px" Height="200px" BorderColor="White" BorderStyle="Solid" BorderWidth="5px" />
+                <asp:Label ID="LBName" runat="server" Text="" ForeColor="White" Font-Size="17" style="font-weight: bold;"></asp:Label>
+
+                <asp:Button ID="AddFriend" runat="server" Text="Add Friend" OnClick="AddFriend_Click1" Visible="false"/>
+                <asp:Button ID="Unfriend" runat="server" Text="Unfriend" OnClick="Unfriend_Click1" Visible="false"/>
+                <asp:Button ID="CancelRequest" runat="server" Text="Cancel Friend Request" OnClick="CancelRequest_Click1" Visible="false"/>
+
+            </div>
+        
+            <div class="menu-bar" runat="server" id="menu_bar">
+            
+                <div class="menu-item">
+                    <asp:HyperLink ID="WallHypLink" runat="server" Text="Wall"></asp:HyperLink>
+                </div>
+            
+                <div class="menu-item">
+                    <asp:HyperLink ID="FriendsHypLink" runat="server" Text="Friends" ></asp:HyperLink>   
+                </div>
+            
+                <div class="menu-item">
+                    <asp:HyperLink ID="PhotosHypLink" runat="server" Text="Photos"></asp:HyperLink>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="profile-description">
+            <asp:Label ID="LBDespre" runat="server" Text="" Font-Size="14"></asp:Label>
+            <br />
+            <br />
+            <table>
+                <tr>
+                    <td>
+                        <asp:Label ID="TagType" runat="server" Text="Profile access:" Visible="false"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="LBType" runat="server" Text="" Visible="false"></asp:Label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <asp:Label ID="TagCity" runat="server" Text="City:" Visible="false"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="LBCity" runat="server" Text="" Visible="false"></asp:Label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <asp:Label ID="TagCountry" runat="server" Text="Country:" Visible="false"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="LBCountry" runat="server" Text="" Visible="false"></asp:Label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <asp:Label ID="TagSchool" runat="server" Text="School:" Visible="false"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="LBSchool" runat="server" Text="" Visible="false"></asp:Label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <asp:Label ID="TagWork" runat="server" Text="Work:" Visible="false"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="LBWork" runat="server" Text="" Visible="false"></asp:Label>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <asp:Label ID="TagBirthday" runat="server" Text="Birthday:" Visible="false"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="LBBirthday" runat="server" Text="" Visible="false"></asp:Label>
+                    </td>
+                
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="TagGender" runat="server" Text="Gender:" Visible="false"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="LBGender" runat="server" Text="" Visible="false"></asp:Label>
+                    </td>
+                </tr>     
+                <tr>
+                
+                    <td>
+                        <asp:Label ID="TagRelationshipStatus" runat="server" Text="Relationship Status:" Visible="false"></asp:Label>            
+                    </td>
+
+                    <td>
+                        <asp:Label ID="LBRelationshipStatus" runat="server" Text="" Visible="false"></asp:Label>
+
+                    </td>
+
+                </tr>
+            </table>
+            <asp:Button ID="BtnUpdateInfo" runat="server" Text="Update Profile Info" OnClick="Button1_Click" Width="100%" Visible="false" />
+        </div>
+
+        <div class="content-placeholder">
+            <asp:Label ID="LBPrivateProfile" runat="server" Text="This profile is private. Only friends can see these informations." ForeColor="Red" Visible="false"></asp:Label>
+            <asp:ContentPlaceHolder ID="ChildContent2" runat="server" Visible="false" />
+        
+        </div>
+    </div>
+</asp:Content>
+

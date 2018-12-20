@@ -1,0 +1,292 @@
+﻿body {
+    background-color: #f7f7f7;
+    padding-bottom: 30px;
+}
+
+.separator{
+    width: 2px;
+    height: 100%;
+    background-color:black;
+}
+
+.table-menu{
+    color: white;
+}
+
+.table-menu td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table-menu td:hover {
+    background-color: #3b5998;
+}
+
+
+.profile-header {
+    position:relative;
+}
+
+.profile-header #profile-picture {
+    position: absolute;
+    top: 165px;
+    margin-left: 10px;
+
+}
+
+.menu-bar {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.menu-bar .menu-item {  
+    height: 100%;
+    text-decoration: none !important;
+    margin-left: -6px;
+    align-content: center;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #365899;
+    border-right: 1px solid #e9eaed;
+    border-left: 1px solid #e9eaed;
+}
+
+.profile-description {
+    width: 30%;
+    height: auto;
+    padding: 15px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5%;
+    float: left;
+}
+
+.menu-bar .menu-item:hover {
+    background-color: #f6f7f9;
+    color: #4b4f56;
+}
+
+.content-placeholder {
+    float: left;
+    width: 68%;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.wall-img {
+    width: 100%;
+    
+}
+
+.post-date, .comment-date {
+    color: grey;
+    font-size: 0.8em;
+}
+
+.wall-post {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    border-bottom: 2px solid #f7f7f7;
+}
+
+.post-text{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.album-img{
+    width: 600px;
+    height: auto;
+    margin: 10px;
+}
+
+.phots-container{
+    width: 80%;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.post-container {
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+}
+
+#post-image{
+    margin-top: 30px;
+}
+
+#post-text{
+    margin-top: 20px;
+}
+
+.comments-container {
+    width: 100%;
+    background-color:  #dfe3ee;
+}
+
+.messages-input {
+    padding: 10px;
+    width: 100%;
+    background-color: #dfe3ee;
+}
+
+.comment {
+    
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 0.5px solid grey;
+    
+}
+
+.comment-field {
+    width: 100%;
+    background-color: #dfe3ee;
+    height: 200px;
+    padding: 10px;
+}
+
+.comment-text{
+    padding: 10px;
+}
+
+.comment-img{
+    margin-right: 6px;
+}
+
+#edit-container {
+    
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.edit-img-container{
+    float: right;
+    margin-right: 100px;
+}
+
+.user-edit-continer {
+    margin-left: 100px;
+}
+
+.album-btn-container a{
+    padding: 10px;
+}
+
+.del-album{
+    float: right;
+}
+
+#albums-container table{
+    width: 100%;
+}
+
+.error {
+    background-color: #f2dede;
+    color: #a94442;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.success span {
+    padding: 10px;
+}
+.error span {
+    padding: 20px;
+}
+
+.info {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.default-container{
+    
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+
+}
+
+.default-separator {
+
+    color: #ccc;
+    background-color: #ccc  ;
+    height: 1px;
+    border: none;
+    margin: 0px 25px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    float:left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.category-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.default-btn {
+    padding: 3px;
+    margin: 2px;
+    
+}
+
+.btn-accept {
+    color: green;
+}
+
+.btn-decline {
+    color: #a94442;
+}
+
+.message-header {
+    float: left;
+}
+
+.message-delete-btn{
+    float: right;
+}
+
+.custom-grid{
+    width: 30%;
+}
+
+.group-name {
+    float: left;
+}
+
+.del-group{
+    float: right;
+}
